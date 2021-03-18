@@ -3,6 +3,9 @@ LilyGo Scirpt
 
 - The example is based on [MaixPy_scripts](https://github.com/sipeed/MaixPy_scripts)
 - Getting started document  [MaixPy Docs](https://cn.maixpy.sipeed.com/maixpy/en/)
+- [TWatch & M1 source code ](https://github.com/Xinyuan-LilyGO/MaixPy)
+- [ESP32 Firmware source code](https://github.com/adafruit/nina-fw)
+- [MaixPy IDE](http://dl.sipeed.com/MAIX/MaixPy/ide/)
 
 ## About ESP32 Firmware:
 - Twatch AT firmware please select `ESP32_AT_Firmware_UART1.bin`
