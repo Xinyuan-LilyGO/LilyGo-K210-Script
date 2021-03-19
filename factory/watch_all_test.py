@@ -70,7 +70,7 @@ def play_music(filename):
 
 
 
-lcd_rotation = 2
+lcd_rotation = 1
 widht = 240
 height = 240
 x_last = 0
