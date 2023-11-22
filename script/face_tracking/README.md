@@ -8,7 +8,7 @@
 
 The following firmware needs to be uploaded to esp32 and k210 respectively:
 
-- ESP32 Firmware: [ESP32_AT_Firmware_UART1_tx26_rx25.bin](../../firmware/ESP32_AT_Firmware_UART1_tx26_rx25.bin)
+- ESP32 Firmware: [ESP32_AT_Firmware_UART1_SGPIO.bin](../../firmware/ESP32_AT_Firmware_UART1_SGPIO.bin)
 
 - K210 Firmware: [maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin](../..//firmware/maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin)
 
