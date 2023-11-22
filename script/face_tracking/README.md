@@ -16,5 +16,6 @@ The following firmware needs to be uploaded to esp32 and k210 respectively:
 
 # Script
 
-Upload drv8833.py and main.py 
+Upload drv8833.py and main.py
+
 Upload up.jpg,down.jpg,left.jpg,right.jpg & stop.jpg 
