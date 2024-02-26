@@ -12,10 +12,10 @@ The following firmware needs to be uploaded to esp32 and k210 respectively:
 
 - K210 Firmware: [maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin](../..//firmware/maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin)
 
-- face model: [face_model_at_0x300000.kfpkg](./face_model_at_0x300000.kfpkg)
+- face model: [Identify_Direction_model.kmodel](./Identify_Direction_model.kmodel)
 
 # Script
 
 Upload drv8833.py and main.py
 
-Upload up.jpg,down.jpg,left.jpg,right.jpg & stop.jpg 
+Put the file Identify_Direction_model.kmodel , main.py , drv8833.py into the SD card
