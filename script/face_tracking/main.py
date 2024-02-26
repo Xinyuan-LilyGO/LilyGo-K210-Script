@@ -18,7 +18,7 @@ def lcd_Show_display():
     #lcd.draw_string(100,100,"LilyGO running ...",lcd.RED,lcd.BLACK)
 
 
-#异常数据显示
+#Abnormal data display
 def lcd_show_except(e):
     import uio
     err_str = uio.StringIO()
@@ -100,9 +100,6 @@ def main(model_addr=0x300000, lcd_rotation=0, sensor_hmirror=False, sensor_vflip
                         img = image.Image("/sd/Left.jpg")
                         status = "turn_left"
                     img.draw_string(obj.x(),obj.y(),status,color=(255,0,0),scale=2)
-                    #img.draw_string(obj.x(),obj.y(),"x: "+str(x),color=(255,0,0) scale=2)
-                    #img.draw_string(obj.x(),obj.y(),"y: "+str(y),color=(255,0,0) scale=2)
-                    #img.draw_string(80, 200, "y:%dms" %(y),color=(255,0,0) scale=2)
             else:
                 d.coast()
                 img = image.Image("/sd/Stop.jpg")
@@ -118,13 +115,12 @@ def main(model_addr=0x300000, lcd_rotation=0, sensor_hmirror=False, sensor_vflip
 
 
 if __name__ == "__main__":
-    #lcd_Show_display()
+    lcd_Show_display()
     d = drv8833.DRV8833(2, 22, 21, 15, 13)
     d.avtive(True)
     d.brake()
     try:
         main( model_addr=0x300000, lcd_rotation=2, sensor_hmirror=False, sensor_vflip=False)
-        # main(model_addr="/sd/m.kmodel")
     except Exception as e:
         sys.print_exception(e)
         lcd_show_except(e)
