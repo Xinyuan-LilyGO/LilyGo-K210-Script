@@ -1,4 +1,4 @@
-# Face Tracking
+# Direction Tracking
 
 # Hardware
 
@@ -12,10 +12,16 @@ The following firmware needs to be uploaded to esp32 and k210 respectively:
 
 - K210 Firmware: [maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin](../..//firmware/maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin)
 
-- face model: [Identify_Direction_model.kmodel](./Identify_Direction_model.kmodel)
+- Direction model: [Identify_Direction_model.kmodel](./Identify_Direction_model.kmodel)
 
-# Script
+# Start
 
-Upload drv8833.py and main.py
+- Get an sd card You can usually use the sd card that came with your purchase
+` !  Note: If you use your own sd card, you may not be able to read it`
 
-Put the file Identify_Direction_model.kmodel , main.py , drv8833.py into the SD card
+` ! Ensure that the disk format of the sd card is FAT32 and the disk partition table type is MBR and that the sd card supports the spi protocol`
+
+- Put `up.jpg` `down.jpg` `left.jpg` `right.jpg` `stop.jpg` `lilygo.jpg` `drv8833.py` `main.py` and `Identify_Direction_model.kmodel` on a USB flash drive or you can download them to the board's memory via the MaixPy IDE
+
+`The second method may affect the speed of memory reading and the space consumption of large files, so the first method is used here`
+

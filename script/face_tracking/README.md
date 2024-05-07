@@ -14,8 +14,14 @@ The following firmware needs to be uploaded to esp32 and k210 respectively:
 
 - face model: [face_model_at_0x300000.kfpkg](./face_model_at_0x300000.kfpkg)
 
-# Script
+# Start
 
-Upload drv8833.py and main.py
+- Get an sd card You can usually use the sd card that came with your purchase
+` !  Note: If you use your own sd card, you may not be able to read it`
 
-Upload up.jpg down.jpg left.jpg right.jpg stop.jpg & lilygo.jpg
+` ! Ensure that the disk format of the sd card is FAT32 and the disk partition table type is MBR and that the sd card supports the spi protocol`
+
+- Put `up.jpg` `down.jpg` `left.jpg` `right.jpg` `stop.jpg` `lilygo.jpg` `drv8833.py` and `main.py` on a USB flash drive or you can download them to the board's memory via the MaixPy IDE
+
+`The second method may affect the speed of memory reading and the space consumption of large files, so the first method is used here`
+
