@@ -17,6 +17,42 @@ def lcd_Show_display():
     #lcd.init()
     #lcd.draw_string(100,100,"LilyGO running ...",lcd.RED,lcd.BLACK)
 
+def start_runnig():
+    d.left_after()
+    time.sleep(3)
+    d.right_after()
+    time.sleep(3)
+    d.forward()
+    time.sleep(3)
+    d.brake()
+
+def play_music(filename):
+    fm.register(34,fm.fpioa.I2S1_OUT_D1)
+    fm.register(35,fm.fpioa.I2S1_SCLK)
+    fm.register(33,fm.fpioa.I2S1_WS)
+    wav_dev = I2S(I2S.DEVICE_1)
+    player = audio.Audio(path = filename)
+    player.volume(20)
+    wav_info = player.play_process(wav_dev)
+    print("wav file head information: ", wav_info)
+    wav_dev.channel_config(wav_dev.CHANNEL_1,
+                            I2S.TRANSMITTER,
+                            resolution = I2S.RESOLUTION_16_BIT ,
+                            cycles = I2S.SCLK_CYCLES_32,
+                            align_mode = I2S.LEFT_JUSTIFYING_MODE)
+    wav_dev.set_sample_rate(wav_info[1])
+    while True:
+        ret = player.play()
+        if ret == None:
+            print("format error")
+            break
+        elif ret==0:
+            print("end")
+            break
+    player.finish()
+    player.__deinit__()
+    wav_dev.__deinit__()
+
 
 #Abnormal data display
 def lcd_show_except(e):
@@ -119,6 +155,7 @@ if __name__ == "__main__":
     d = drv8833.DRV8833(2, 22, 21, 15, 13)
     d.avtive(True)
     d.brake()
+    start_runnig()
     try:
         main( model_addr=0x300000, lcd_rotation=2, sensor_hmirror=False, sensor_vflip=False)
     except Exception as e:
