@@ -21,6 +21,6 @@ esp32和k210需要分别上传以下固件:
 
 ` ! 请确保sd卡的磁盘格式为FAT32，磁盘分区表类型为MBR，且支持spi协议`
 
-- 将` up.jpg ` ` down.jpg ` ` left.jpg ` ` right.jpg ` ` stop.jpg ` ` lilygo.jpg ` ` drv8833.py `和` main.py `放在SD卡中，或者您可以通过MaixPy IDE将它们下载到主板的内存中
+- 将`drv8833.py ` ` main.py `和` Identify_Direction_model.kmodel `存放到SD卡内或者你可以通过MaixPy IDE将它们下载到主板的内存中
 
 `第二种方法可能会影响内存读取的速度和大文件的空间消耗，所以这里使用第一种方法`
