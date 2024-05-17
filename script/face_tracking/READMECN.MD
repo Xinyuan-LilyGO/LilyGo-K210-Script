@@ -12,7 +12,7 @@ esp32和k210需要分别上传以下固件:
 
 - K210固件:[maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin](../..//firmware/maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin)
 
--面部模型:[face_model_at_0x300000.kfpkg](./face_model_at_0x300000.kfpkg)
+- 面部模型:[face_model_at_0x300000.kfpkg](./face_model_at_0x300000.kfpkg)
 
 # Start
 
