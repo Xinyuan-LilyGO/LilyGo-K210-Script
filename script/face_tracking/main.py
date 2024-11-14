@@ -75,7 +75,7 @@ def main(model_addr=0x300000, lcd_rotation=0, sensor_hmirror=False, sensor_vflip
     sensor.set_vflip(sensor_vflip)
     sensor.run(1)
 
-    lcd.init(type=1)
+    lcd.init(type=0)
     lcd.rotation(lcd_rotation)
     #lcd.mirror(True)
     lcd.clear(lcd.WHITE)
@@ -104,7 +104,7 @@ def main(model_addr=0x300000, lcd_rotation=0, sensor_hmirror=False, sensor_vflip
                         img = image.Image("/sd/Left.jpg")
                         status = "left_after"
                     elif x >= 120 and x < 200 and y < 115:
-                        d.reverse() # 2 reverse
+                        d.forward() # 8
                         img = image.Image("/sd/Up.jpg")
                         status = "reverse"
                     elif x >= 200 and y < 80:
@@ -128,7 +128,8 @@ def main(model_addr=0x300000, lcd_rotation=0, sensor_hmirror=False, sensor_vflip
                         img = image.Image("/sd/Right.jpg")
                         status = "turn_right"
                     elif x >= 120 and x < 200 and y >= 160:
-                        d.forward() # 8
+                        
+                        d.reverse() # 2 reverse
                         img = image.Image("/sd/Down.jpg")
                         status = "forward"
                     elif x >= 200 and y >= 160:
