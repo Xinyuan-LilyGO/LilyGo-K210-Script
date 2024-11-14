@@ -18,5 +18,8 @@ LilyGo Scirpt
     ![](./image/setting.jpg)
     
 
+## Attention
+- 请确保sd卡的磁盘格式为`FAT32`，磁盘分区表类型为`MBR`，且支持`spi`协议
 
+![San Disk](/image/image.png)
 
