@@ -19,7 +19,12 @@ LilyGo Scirpt
     
 
 ## Attention
-- 请确保sd卡的磁盘格式为`FAT32`，磁盘分区表类型为`MBR`，且支持`spi`协议
+1. Ensure that the disk format of the sd card is `FAT32` and the disk partition table type is `MBR` and that the sd card supports the `spi` protocol
 
-![San Disk](/image/image.png)
+![San Disk](/image/SdCard.jpg)
 
+2. You need to use a rechargeable 9V lithium battery. The recommended battery brand is `Doublepow` battery model 9V- Li-ion-650mAh, or other brands of 9V batteries that meet the discharge current of 600mA. 
+
+![Doublepow battery](/image/battery.jpg)
+
+3. When removing the 9V battery compartment, you need to pry the battery open from the front cable outlet position with a screwdriver or other slender tools, and then pull out the battery compartment from the back.
