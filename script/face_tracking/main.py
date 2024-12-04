@@ -102,39 +102,39 @@ def main(model_addr=0x300000, lcd_rotation=0, sensor_hmirror=False, sensor_vflip
                     if x < 120 and y < 80:
                         d.left_after() # 1 left_after
                         img = image.Image("/sd/Right.jpg")
-                        status = "left_after"
+                        status = "Right"
                     elif x >= 120 and x < 200 and y < 115:
                         d.reverse() # 2 reverse
                         img = image.Image("/sd/Up.jpg")
-                        status = "reverse"
+                        status = "Reverse"
                     elif x >= 200 and y < 80:
                         d.right_after() # 3
                         img = image.Image("/sd/Left.jpg")
-                        status = "right_after"
+                        status = "Left"
                     elif x < 120 and y >= 80 and y < 160:
                         d.left_after() # 4
                         img = image.Image("/sd/Right.jpg")
-                        status = "left_after"
+                        status = "Right"
                     elif x >= 120 and x < 200 and y >= 115 and y < 160:
                         d.brake() # 5
                         img = image.Image("/sd/Stop.jpg")
-                        status = "brake"
+                        status = "Brake"
                     elif x >= 200 and y >= 80 and y < 160:
                         d.right_after() # 6
                         img = image.Image("/sd/Left.jpg")
-                        status = "right_after"
+                        status = "Left"
                     elif x < 120 and y >= 160:
                         d.turn_right() # 7
                         img = image.Image("/sd/Right.jpg")
-                        status = "turn_right"
+                        status = "Right"
                     elif x >= 120 and x < 200 and y >= 160:
                         d.forward() # 8
                         img = image.Image("/sd/Down.jpg")
-                        status = "forward"
+                        status = "Forward"
                     elif x >= 200 and y >= 160:
                         d.turn_left() # 9
                         img = image.Image("/sd/Left.jpg")
-                        status = "turn_left"
+                        status = "Left"
                     img.draw_string(obj.x(),obj.y(),status,color=(255,0,0),scale=2)
             else:
                 d.coast()

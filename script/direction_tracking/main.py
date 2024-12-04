@@ -99,10 +99,10 @@ def main(anchors, labels = None, model_addr="/sd/Identify_Direction_model.kmodel
                     elif labels[obj.classid()] == 'back':
                         d.reverse()
                     elif labels[obj.classid()] == 'left':
-                        play_music('/sd/left.wav')
+                        # play_music('/sd/left.wav')
                         d.left_after()
                     elif labels[obj.classid()] == 'right':
-                        play_music('/sd/right.wav')
+                        # play_music('/sd/right.wav')
                         d.right_after()
             else:
                 d.coast()
@@ -127,7 +127,7 @@ if __name__ == "__main__":
         main(anchors = anchors, labels=labels, model_addr="/sd/Identify_Direction_model.kmodel")
     except Exception as e:
         sys.print_exception(e)
-        play_music('/sd/bm.wav');
+        # play_music('/sd/bm.wav');
         lcd_show_except(e)
     finally:
         gc.collect()
