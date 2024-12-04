@@ -20,7 +20,7 @@ The following firmware needs to be uploaded to esp32 and k210 respectively:
 
 - Open the K210 terminal and input `os.listdir("/")`, if you see `['flash', 'sd']`, it means the SD card has been successfully detected. If the SD card cannot be read, you can try using the card shown in the image
 
-![San Disk](/image/image.png)
+![San Disk](/image/SdCard.jpg)
 
 ` !  Note: If you use your own sd card, you may not be able to read it`
 

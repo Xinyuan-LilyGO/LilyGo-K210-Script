@@ -20,7 +20,7 @@ esp32和k210需要分别上传以下固件:
 
 - 打开K210终端，输入`os.listdir("/")`,出现` ['flash', 'sd'] `即成功检测到SD卡,若无法读取到SD卡可使用下图的卡。
 
-![San Disk](/image/image.png)
+![San Disk](/image/SdCard.jpg)
 
 ` ! 注意:如果您使用自己的sd卡，您可能无法读取它`
 
