@@ -6,6 +6,7 @@ LilyGo Scirpt
 - [手表& M1源代码](https://github.com/Xinyuan-LilyGO/MaixPy)
 - [ESP32固件源代码](https://github.com/adafruit/nina-fw)
 - [MaixPy IDE](http://dl.sipeed.com/MAIX/MaixPy/ide/)
+- [kflash_gui](https://dl.sipeed.com/shareURL/MAIX/tools)
 
 关于ESP32固件：
 - 查看AT固件请选择`ESP32_AT_Firmware_UART1.bin`
