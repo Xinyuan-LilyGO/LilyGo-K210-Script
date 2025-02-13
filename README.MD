@@ -8,6 +8,11 @@ LilyGo Scirpt
 - [MaixPy IDE](http://dl.sipeed.com/MAIX/MaixPy/ide/)
 - [kflash_gui](https://dl.sipeed.com/shareURL/MAIX/tools)
 
+## Use reference
+
+- [T-BAO](https://www.youtube.com/watch?v=vCzTFDb4YZ0)
+    You can refer to this video to use
+    
 ## About ESP32 Firmware:
 - Twatch AT firmware please select `ESP32_AT_Firmware_UART1.bin`
 - M1 AT firmware, please select `ESP32_AT_Firmware_UART0.bin`

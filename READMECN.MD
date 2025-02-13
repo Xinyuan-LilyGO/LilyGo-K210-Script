@@ -8,7 +8,13 @@ LilyGo Scirpt
 - [MaixPy IDE](http://dl.sipeed.com/MAIX/MaixPy/ide/)
 - [kflash_gui](https://dl.sipeed.com/shareURL/MAIX/tools)
 
-关于ESP32固件：
+
+# #参考
+
+- [T-BAO](https://www.youtube.com/watch?v=vCzTFDb4YZ0)
+你可以参考这个视频来使用
+
+# #关于ESP32固件：
 - 查看AT固件请选择`ESP32_AT_Firmware_UART1.bin`
 - M1 AT固件，请选择`ESP32_AT_Firmware_UART0.bin`
 - 手表和M1 SPI固件，请选择`ESP32_SPI_Firmware_1.7.1.bin`
